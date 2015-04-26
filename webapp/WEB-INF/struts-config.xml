@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_3.dtd">
+<struts-config>
+	<form-beans>
+	   <form-bean name="rechargeForm" type="com.happysystems.form.RechargeForm" scope="request"/>
+	</form-beans>
+ 
+	<action-mappings>
+	   <action path="/recharge"
+		type="com.happysystems.action.RechargeAction"
+		name="rechargeForm">
+		<forward name="success" redirect="true" path="/index.jsp"/>
+	   </action>
+		<action path="/lastrc"
+		type="com.happysystems.action.RechargeAction"
+		name="rechargeForm">
+		<forward name="success" redirect="true" path="/index.jsp"/>
+	   </action>
+		<action path="/dispute"
+		type="com.happysystems.action.RechargeAction"
+		name="rechargeForm">
+		<forward name="success" redirect="true" path="/index.jsp"/>
+	   </action>
+		<action path="/history"
+		type="com.happysystems.action.HistoryAction"
+		>
+		<forward name="success" path="/history.jsp"/>
+		<forward name="json" path="/jsonhistory.jsp"/>
+	   </action>
+	</action-mappings>
+</struts-config>

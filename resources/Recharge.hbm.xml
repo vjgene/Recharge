@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+ 
+<hibernate-mapping>
+ <class name="com.happysystems.model.Recharge" table="recharge">
+	<id name="id" type="int" column="id" > <generator class="assigned"/> </id>
+	<property name="operator"> <column name="operator" /> </property>
+	<property name="response"> <column name="response"/> </property>
+	<property type="long" name="number"> <column name="number"/> </property>
+	<property type="double" name="amount"> <column name="amount"/> </property>
+	<property name="created" type="timestamp"> <column name="created"/> </property>
+ </class>
+</hibernate-mapping>

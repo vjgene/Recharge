@@ -1,0 +1,8 @@
+optgroup {font-size:1.3em;}
+select {font-size:150%; height:2em}
+input {font-size: 1.5em;}
+form {line-height: 300%;}
+body {font-family:"Times New Roman",serif,arial; font-size: 1.15em;}
+h3 {font-size:2em;color:blue}
+span.href {cursor:pointer;color:blue}
+h1 {text-transform:capitalize;color:rgb(0,180,0);font-family:serif,arial,verdana}
